@@ -2,7 +2,7 @@
 
 
 (() => {
-
+    document.getElementById('run').addEventListener('click', () => {
     let people = [
         {
             firstname: "Garald",
@@ -30,7 +30,7 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
-
-    // your code here
+    people.forEach(element => console.log(element.firstname + element.lastname));
+    });
 
 })();

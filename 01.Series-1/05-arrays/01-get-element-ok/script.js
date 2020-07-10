@@ -1,8 +1,7 @@
-// 05-arrays/01-get-element/script.js - 5.1: walk through the list
-
+// 05-arrays/01-get-element/script.js - 5.1: item in array
 
 (() => {
-
+    document.getElementById('run').addEventListener('click', () => {
     let fruits = [
         "apple",
         "pear",
@@ -17,7 +16,6 @@
         "grap",
         "cherry",
     ];
-
-    // your code here
-
+        alert(fruits);
+    });
 })();
