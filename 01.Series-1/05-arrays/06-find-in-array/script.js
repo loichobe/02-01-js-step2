@@ -1,7 +1,7 @@
 // 05-arrays/06-find-in-array/script.js - 5.6: find in the array
 
 (() => {
-
+    document.getElementById('run').addEventListener('click', () => {
     let people = [
         {
             firstname: "Bradford",
@@ -79,7 +79,10 @@
             email: "gkeatche@google.fr",
         },
     ];
-
-    // your code here
-
+    people.forEach(element => {
+            if (element.firstname == "Jean" && element.lastname == "Dupont") {
+                console.log(people.indexOf(element));
+            }
+        })
+    });
 })();
