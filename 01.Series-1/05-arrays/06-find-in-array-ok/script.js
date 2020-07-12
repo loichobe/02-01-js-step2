@@ -80,8 +80,8 @@
         },
     ];
     people.forEach(element => {
-            if (element.firstname == "Jean" && element.lastname == "Dupont") {
-                console.log(people.indexOf(element));
+            if (element.firstname === "Jean" && element.lastname === "Dupont") {
+                console.log(element.email);
             }
         })
     });

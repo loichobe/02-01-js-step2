@@ -1,7 +1,7 @@
 // 05-arrays/07-filter-array/script.js - 5.7: filter an array
 
 (() => {
-
+    document.getElementById('run').addEventListener('click', () => {
     const people = [
         {
             firstname: "Dreddy",
@@ -79,7 +79,12 @@
             age: 81,
         },
     ];
-
-    // your code here
-
+    let arr = [];
+    people.forEach(element => {
+        if (element.age > 18){
+            arr.push(element);
+        }
+    });
+    console.log(arr);
+    });
 })();
