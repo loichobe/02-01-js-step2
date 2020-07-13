@@ -2,7 +2,6 @@
 
 
 (() => {
-
-    // your code here
-
+    let a = document.getElementById('pass-one')
+    a.className += 'maxlength="10"';
 })();
