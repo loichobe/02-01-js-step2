@@ -5,12 +5,12 @@
     let target = document.getElementById('target');
     let origin = target.innerHTML;
     let i = 0;
-    let random = (Math.floor(Math.random() * 200)+1);
+    let random = Math.floor(Math.random() * (200-100+1))+100;
     target.innerHTML = '';
     function typewriter() {
-        target.innerHTML += origin.substring(i, i=1);
+        target.innerHTML += origin.substring(i, i+1);
         i++;
-        random = (Math.floor(Math.random() * 200)+1);
+        random = Math.floor(Math.random() * (200-100+1))+100;
     }
     setInterval(typewriter, random);
 })();
